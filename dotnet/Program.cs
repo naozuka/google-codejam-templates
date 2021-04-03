@@ -11,12 +11,12 @@ namespace dotnet
             int testCases = helper.ReadLine<int>();
             for (int testCase = 1; testCase <= testCases; testCase++) 
             {
-                string result = Resolve(helper);
+                string result = Solve(helper);
                 helper.WriteLine(String.Format("Case #{0}: {1}", testCase, result));
             }        
         }
 
-        static string Resolve(IOHelper helper)
+        static string Solve(IOHelper helper)
         {
             int[] numbers = helper.ReadLineAsArray<int>();
             int sum = 0;
